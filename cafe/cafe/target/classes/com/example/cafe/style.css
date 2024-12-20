@@ -1,0 +1,629 @@
+
+#background {
+    -fx-background-image: url(home8.jpg);
+    -fx-background-size: 100% 100%; /* Ensure the image fits within the scene without stretching or cropping */
+    -fx-background-repeat: no-repeat; /* Prevent image repetition */
+    -fx-background-attachment: fixed;
+    -fx-alignment: center;
+    -fx-backround-image-height: 300;
+    -fx-bacground-image-width: 300;
+}
+
+#root {
+    -fx-alignment: center; /* Center content inside the VBox */
+}
+
+.Text {
+    -fx-font-weight: bold;
+    -fx-fill: white;
+    -fx-font-size: 3em;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0.2, 0, 2);/* Text shadow effect */
+}
+
+#vbox2 {
+    /*-fx-background-color: rgba(86, 110, 61, 0.8); !* Background with opacity *!*/
+    -fx-padding: 3em; /* Padding inside the VBox */
+    -fx-border: solid 2px black; /* Border style */
+    -fx-border-radius: 20px; /* Rounded corners */
+    -fx-background-radius: 20px; /* Rounded corners for background */
+    -fx-alignment: center; /* Center content inside each VBox */
+    -fx-max-height: 100em;
+    -fx-max-width: 20em;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 4);
+
+}
+
+#btn1, #btn2 {
+    -fx-background-color: #0775ec; /* Initial background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-size: 20px; /* Font size */
+    -fx-padding: 10px 30px; /* Padding for size */
+    -fx-border-radius: 20px; /* Rounded border corners */
+    -fx-background-radius: 20px; /* Rounded background corners */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 5, 0, 2, 2); /* Optional shadow */
+    -fx-transition: all 0.5s ease-in-out; /* Smooth transition for all properties */
+}
+#btn1:pressed,#btn2:pressed {
+    -fx-background-color: #0775ec; /* Even darker green */
+    -fx-scale-x: 1; /* Reset scaling */
+    -fx-scale-y: 1;
+}
+
+/* Button Hover Effect */
+#btn1:hover, #btn2:hover {
+    -fx-background-color: #0775ec;
+    -fx-opacity: 0.5;/* Darker background on hover */
+    -fx-padding: 10px 50px; /* Increase padding for size change */
+    -fx-border-radius: 20px; /* Additional rounding on hover */
+    -fx-background-radius: 20px;
+    -fx-scale-x: 1.05; /* Slight scale effect */
+    -fx-scale-y: 1.05;
+}
+#loginBackground{
+    -fx-background-image: url(home17.jpg);
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    /*-fx-background-position: center center;*/
+    -fx-alignment: center;
+    -fx-backgorund-attachment: fixed;
+}
+#backButton{
+    -fx-background-image: url(arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png);
+    -fx-background-size: cover;
+    -fx-max-height: 10px;
+    -fx-max-width: 30px;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+
+}
+
+.backBtn {
+    -fx-background-image: url('arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png');
+    -fx-background-size: cover;
+    -fx-max-height: 24px; /* Match the image size */
+    -fx-max-width: 24px;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+
+    /* Ensure proper alignment */
+    -fx-translate-x: -610px; /* Adjust as needed based on layout */
+    -fx-translate-y: -295px;
+    -fx-padding: 12px 22px;
+
+
+}
+
+
+#pane3 {
+
+    -fx-padding: 5em; /* Padding around content */
+    -fx-padding-left:5em;
+    -fx-border: solid 2px black; /* Border style */
+    -fx-border-radius: 20px; /* Rounded corners */
+    -fx-background-radius: 20px; /* Rounded corners for background */
+    -fx-alignment: center; /* Center content inside the pane */
+    -fx-max-height: 30em;
+    -fx-max-width: 25em;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 4);
+}
+
+#hyperlink {
+    -fx-font-size: 18px; /* Increased font size for the hyperlink */
+    -fx-text-fill: lightblue;
+    -fx-alignment: center; /* Center-align text in the hyperlink */
+    -fx-cursor: hand;
+    -fx-underline: false; /* Add underline for better visibility */
+    -fx-faint-focus-color: transparent;
+    -fx-focus-color: transparent;
+}
+
+#vbox3 {
+    -fx-padding: 2em; /* Padding inside the VBox */
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-background-radius: 10px;
+    -fx-alignment: center; /* Center-align VBox content */
+    -fx-max-height: 40em;
+}
+
+#backButton {
+    -fx-background-image: url(arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png);
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-min-height: 40px; /* Increased button size */
+    -fx-min-width: 40px; /* Increased button size */
+    -fx-cursor: hand;
+}
+#usernameLabel{
+    -fx-text-fill: white;
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+
+
+
+}
+#loginButton {
+    -fx-background-color: #0775ec; /* Button background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-size: 22px; /* Increased font size */
+    -fx-padding: 10px 30px; /* Increased padding for larger buttons */
+    -fx-border-radius: 20px; /* Rounded border corners */
+    -fx-background-radius: 20px; /* Rounded background corners */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 5, 0, 2, 2); /* Optional shadow */
+    -fx-transition: all 0.5s ease-in-out; /* Smooth transition for all properties */
+}
+
+#username, #password {
+    -fx-font-size: 18px; /* Font size for input text */
+    -fx-pref-height: 40px; /* Height of the text fields */
+    -fx-pref-width: 300px; /* Width of the text fields */
+    -fx-padding: 5px; /* Padding inside text fields */
+    -fx-background-color: #ffffff; /* Background color */
+    -fx-border-color: #61a2b1; /* Border color */
+    -fx-border-width: 2px; /* Border thickness */
+    -fx-background-radius: 15px; /* Rounded corners for the background */
+    -fx-border-radius: 15px; /* Rounded corners for the border */
+}
+
+#passwordLabel {
+    -fx-text-fill: white;
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+
+}
+#loginButton:hover{
+    -fx-background-color: #0775ec; /* Darker background on hover */
+    -fx-opacity: 0.5;
+    -fx-padding: 10px 40px; /* Increase padding for size change */
+    -fx-border-radius: 20px; /* Additional rounding on hover */
+    -fx-background-radius: 20px;
+}
+#signImage{
+    -fx-background-image: url(home9.jpg);
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    /*-fx-background-position: center center;*/
+    -fx-alignment: center;
+    -fx-backgorund-attachment: fixed;
+}
+.textDesign{
+    -fx-text-fill: white;
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+}
+
+.fieldDesign {
+    -fx-font-size: 18px;
+    -fx-pref-height: 40px;
+    -fx-pref-width: 250px;
+    -fx-padding: 5px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #61a2b1;
+    -fx-border-width: 2px;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+
+#vbox4 {
+    -fx-padding: 2em; /* Padding inside the VBox */
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-background-radius: 10px;
+    -fx-alignment: center; /* Center-align VBox content */
+    -fx-max-height: 35em; /* Reduce max height */
+    -fx-max-width: 25em; /* Reduce max width */
+    -fx-spacing: 10px; /* Spacing between elements inside VBox */
+}
+#forgetImg{
+    -fx-background-image: url(home7.jpg);
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-alignment: center;
+    -fx-background-attachment: fixed;
+
+}
+.eyeButton {
+    -fx-background-color: transparent;
+    -fx-border: none;
+    -fx-cursor: hand;
+    -fx-font-size: 16px;
+    -fx-text-fill: gray;
+}
+
+.eyeButton:hover {
+    -fx-text-fill: #61a2b1; /* Change color on hover */
+}
+
+
+.button1 {
+    -fx-background-color: #0775ec; /* Button color */
+    -fx-text-fill: white; /* White text */
+    -fx-font-size: 18px; /* Font size */
+    -fx-font-weight: bold; /* Bold font */
+    -fx-border-radius: 15; /* Rounded corners */
+    -fx-background-radius: 15; /* Match background corners with border */
+    -fx-padding: 10 30; /* Padding for height and width */
+    -fx-border-width: 2; /* Border width */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0.2, 0, 2); /* Reduced shadow */
+}
+
+/* Hover effect for buttons with slightly larger shadow */
+.button1:hover {
+    -fx-background-color: #0775ec; /* Same color */
+    -fx-opacity: 0.6;
+    -fx-text-fill: white;
+    -fx-cursor: hand; /* Pointer cursor */
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 6, 0.2, 0, 3); /* Slightly larger shadow on hover */
+}
+
+/* Button press effect with minimal shadow */
+.button1:pressed {
+    -fx-background-color: #0775ec;
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0.1, 0, 1); /* Very subtle shadow on press */
+}
+
+
+#menupic{
+    -fx-background-image: url(pexels-scottwebb-2530586.jpg);
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-alignment: center;
+
+
+}
+
+
+
+#menuVbox{
+    -fx-padding: 4em; /* Padding inside the VBox */
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-background-radius: 10px;
+    -fx-alignment: center; /* Center-align VBox content */
+    -fx-max-height: 70em; /* Reduce max height */
+    -fx-max-width: 40em; /* Reduce max width */
+    -fx-spacing: 25px; /* Spacing between elements inside VBox */
+
+
+}
+
+
+/* Content StackPane styling */
+#background-layer {
+    -fx-padding: 10;
+    -fx-background-image: url(home11.jpg);
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-alignment: center;
+}
+
+/* Title styling */
+#title-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-padding: 15px 0 0 115px;
+}
+
+/* Table styling */
+#inventory-table {
+    -fx-border-color: #d4d4d4;
+    -fx-border-width: 2px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-font-size: 14px;
+    -fx-padding: 10;
+}
+
+/* Form container */
+#form-container {
+    -fx-padding: 20;
+    -fx-border-color: #d4d4d4;
+    -fx-border-width: 2px;
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 4);
+    -fx-background-radius: 8px;
+}
+
+/* Content container styling */
+#content-container {
+    -fx-spacing: 20px;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 4);
+    -fx-alignment: center;
+}
+
+/* Input field styling */
+.input-field {
+    -fx-pref-width: 200px;
+    -fx-padding: 8px;
+    -fx-border-color: #7b8b9a;
+    -fx-border-width: 2px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 4);
+    -fx-border-radius: 5px;
+    -fx-font-size: 14px;
+}
+
+.action-button {
+    -fx-background-color: #0078d7;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.2, 0, 2);
+}
+
+.action-button:hover {
+    -fx-background-color: #005bb5;
+    -fx-opacity: 0.6;
+}
+
+/* Image preview */
+.image-preview {
+    -fx-border-color: #ccc;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+/* Main pane styling */
+.main-pane {
+    -fx-background-color: #f5f5f5;
+}
+#mainback{
+    -fx-background-image: url(home11.jpg);
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-alignment: center;
+}
+/* General style for the application */
+.borderPane{
+    -fx-font-family: Arial, sans-serif;
+    -fx-background-color: #ffffff;
+}
+
+/* Menu Section Styling */
+#menu-section {
+    -fx-border-color: #000000;
+    -fx-border-width: 2px;
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 10;
+    -fx-max-height:500px;
+    -fx-max-width: 600px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+
+}
+
+#menu-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+/* Menu item styling */
+#menu-item {
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 10;
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 1);
+}
+
+#menu-item:hover {
+    -fx-background-color: #f0f0f0;
+}
+
+.product-name {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.product-price {
+    -fx-font-size: 14px;
+    -fx-text-fill: #777777;
+}
+
+.product-image{
+    -fx-border-radius: 5px;
+}
+
+.add-to-order {
+    -fx-background-color: #28a745; /* Green button */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 5 10;
+}
+
+.add-to-order:hover {
+    -fx-background-color: #218838;
+}
+
+/* Table Styling */
+#order-table {
+    -fx-border-color: #d4d4d4;
+    -fx-border-width: 2px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-font-size: 14px;
+    -fx-padding: 10;
+    -fx-max-width: 400px;
+
+}
+
+#order-table .table-column-header {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-color: #f0f0f0;
+}
+
+#ordertable .table-cell {
+    -fx-padding: 5 10;
+    -fx-font-size: 12px;
+    -fx-border-color: #dddddd;
+}
+
+/* Payment Section */
+#paymentsection {
+    -fx-padding: 10;
+    -fx-border-color: #000000;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-color: #f7f7f7;
+}
+
+#total-label, #amount-paid-label, #change-label ,#customer-num{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+#total-field, #amount-paid-field, #change-field , #customer-number {
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5;
+    -fx-max-width: 30em;
+    -fx-alignment: center;
+}
+
+#total-field:focused, #amount-paid-field:focused, #change-field:focused {
+    -fx-border-color: #007bff;
+    /* Blue border when focused */
+}
+
+/* Button Styling */
+#remove-button, #pay-button, #print-receipt-button {
+    -fx-background-color: #007bff; /* Blue button */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-padding: 5 15;
+}
+
+#remove-button:hover, #pay-button:hover, #print-receipt-button:hover {
+    -fx-background-color: #0056b3;
+}
+
+#remove-button:pressed, #pay-button:pressed, #print-receipt-button:pressed {
+    -fx-background-color: #003f7f;
+}
+/* General styles */
+/* General styles */
+#backgroundPane {
+    -fx-font-family: "Arial";
+    -fx-background-image: url(home11.jpg);
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-alignment: center;
+
+}
+
+/* Styles for containers */
+.containerBox {
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-padding: 10;
+    -fx-spacing: 5;
+    -fx-pref-width: 200;
+    -fx-pref-height: 100;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0, 2, 2);
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-alignment: center;
+}
+
+/* Styles for the container title */
+.container-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+
+#imageMenu{
+    -fx-fit-width: 100px; /* Set the width of the ImageView */
+    -fx-fit-height: 100px;
+}
+
+/* Background Image */
+#backgroundStack {
+    -fx-background-image: url("home11.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-background-attachment: fixed;
+}
+
+/* Styling for Table */
+#customerTable {
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-max-height: 300px;
+    -fx-max-width: 300px;
+}
+
+/* Styling for Table Columns */
+.table-view .column-header {
+    -fx-text-fill: white;
+}
+
+.table-view .table-cell {
+    -fx-background-color: white;
+    -fx-border-color: #d3d3d3;
+}
+
+/* Content Stack (overlay) */
+#contentStack {
+    -fx-background-color: rgba(255, 255, 255, 0.7);
+}
+#customerTable{
+    -fx-border-color: #d4d4d4;
+    -fx-border-width: 2px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-font-size: 14px;
+    -fx-padding: 10;
+    -fx-max-width: 500px;
+    -fx-max-height: 500px;
+}
+#dashboardBox{
+    -fx-background-image: url(home11.jpg);
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-alignment: center;
+    -fx-background-color: #f7f7f7;
+    -fx-border-color: #d4d4d4;
+    -fx-border-width: 2px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+#income-text{
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+#customers-text{
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+#sold-products-text{
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
